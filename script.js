@@ -445,12 +445,8 @@
       lines.push('');
     });
     const subtotal = cart.reduce(function (sum, item) { return sum + item.price; }, 0);
-    const chargeableItemCount = cart.filter(function (item) { return getServiceCharge(item) > 0; }).length;
     const serviceCharge = cart.reduce(function (sum, item) { return sum + getServiceCharge(item); }, 0);
     lines.push('Items subtotal: ' + formatNaira(subtotal));
-    lines.push(chargeableItemCount
-      ? 'Service charge: ₦100 × ' + chargeableItemCount + ' chargeable item' + (chargeableItemCount === 1 ? '' : 's') + ' = ' + formatNaira(serviceCharge) + ' (data and airtime exempt)'
-      : 'Service charge: ' + formatNaira(0) + ' (no charge on data plans or airtime)');
     lines.push('Total to pay: ' + formatNaira(subtotal + serviceCharge));
     lines.push('');
     lines.push('Thank you.');
