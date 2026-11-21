@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1f3a">
+  <meta name="description" content="Buy weekly or monthly MTN, Airtel, or Glo data bundles from Sunky Digitals. Ask us about 9mobile plans.">
+  <title>Data Plans | Sunky Digitals</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="icon-button menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-open-nav>☰</button>
+      <a class="brand" href="index.html" aria-label="Sunky Digitals home"><span class="brand-mark">S</span><span>Sunky <b>Digitals</b></span></a>
+      <div class="header-actions">
+        <span class="live-status"><i></i> All Services Active</span>
+        <button class="cart-trigger" type="button" aria-label="Open shopping cart" data-open-cart>🛒 <span class="cart-label">Cart</span><span class="cart-count" data-cart-count>0</span></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><span>Data Plans</span></div>
+        <span class="eyebrow">A LITTLE MORE INTERNET, FOR LESS</span>
+        <h1>Data plans, made easy</h1>
+        <p>Browse weekly and monthly bundles for MTN, Airtel, and Glo. Ask us about available 9mobile plans.</p>
+        <div class="page-hero-tags"><span>MTN</span><span>Airtel</span><span>Glo &amp; 9mobile</span></div>
+      </div>
+      <div class="page-hero-visual data-visual"><span>⌁</span><b>ALWAYS<br>CONNECTED</b><small>DATA PLANS</small></div>
+    </section>
+    <section class="section">
+      <div class="section-heading">
+        <div><span class="eyebrow">DATA BUNDLE LIST</span><h2>Choose a network, pick a plan</h2></div>
+        <p>Select a network, choose a plan and enter the recipient number before adding it to your cart.</p>
+      </div>
+      <nav class="network-jumps" aria-label="Jump to a data network">
+        <span>Jump to</span>
+        <a href="#network-mtn">MTN</a>
+        <a href="#network-airtel">Airtel</a>
+        <a href="#network-glo">Glo</a>
+        <a href="#network-9mobile">9mobile</a>
+      </nav>
+      <div class="network-grid" data-plan-catalog>
+        <section class="network-card" id="network-mtn" data-network-card="MTN">
+          <div class="network-heading"><span class="rate-logo mtn">MTN</span><div><h3>MTN Data</h3><small>Weekly and monthly bundles</small></div></div>
+          <div class="network-recipient">
+            <label for="mtn-recipient">Phone number for MTN data</label>
+            <input id="mtn-recipient" data-network-recipient type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 08012345678" pattern="(?:0[789][0-9]{9}|\+?234[789][0-9]{9})" title="Enter a valid Nigerian mobile number, e.g. 08012345678 or +2348012345678" required>
+            <span>This number will be used for MTN plans added to your cart.</span>
+          </div>
+          <div class="plan-periods" role="group" aria-label="MTN plan duration">
+            <button type="button" class="plan-period is-active" data-plan-period="weekly" aria-pressed="true">Weekly</button>
+            <button type="button" class="plan-period" data-plan-period="monthly" aria-pressed="false">Monthly</button>
+          </div>
+          <div class="plan-list" data-plan-list></div>
+        </section>
+        <section class="network-card" id="network-airtel" data-network-card="Airtel">
+          <div class="network-heading"><span class="rate-logo airtel">A</span><div><h3>Airtel Data</h3><small>Weekly and monthly bundles</small></div></div>
+          <div class="network-recipient">
+            <label for="airtel-recipient">Phone number for Airtel data</label>
+            <input id="airtel-recipient" data-network-recipient type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 08012345678" pattern="(?:0[789][0-9]{9}|\+?234[789][0-9]{9})" title="Enter a valid Nigerian mobile number, e.g. 08012345678 or +2348012345678" required>
+            <span>This number will be used for Airtel plans added to your cart.</span>
+          </div>
+          <div class="plan-periods" role="group" aria-label="Airtel plan duration">
+            <button type="button" class="plan-period is-active" data-plan-period="weekly" aria-pressed="true">Weekly</button>
+            <button type="button" class="plan-period" data-plan-period="monthly" aria-pressed="false">Monthly</button>
+          </div>
+          <div class="plan-list" data-plan-list></div>
+        </section>
+        <section class="network-card" id="network-glo" data-network-card="Glo">
+          <div class="network-heading"><span class="rate-logo glo">GLO</span><div><h3>Glo Data</h3><small>Weekly and monthly bundles</small></div></div>
+          <div class="network-recipient">
+            <label for="glo-recipient">Phone number for Glo data</label>
+            <input id="glo-recipient" data-network-recipient type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 08012345678" pattern="(?:0[789][0-9]{9}|\+?234[789][0-9]{9})" title="Enter a valid Nigerian mobile number, e.g. 08012345678 or +2348012345678" required>
+            <span>This number will be used for Glo plans added to your cart.</span>
+          </div>
+          <div class="plan-periods" role="group" aria-label="Glo plan duration">
+            <button type="button" class="plan-period is-active" data-plan-period="weekly" aria-pressed="true">Weekly</button>
+            <button type="button" class="plan-period" data-plan-period="monthly" aria-pressed="false">Monthly</button>
+          </div>
+          <div class="plan-list" data-plan-list></div>
+        </section>
+        <section class="network-card network-enquiry" id="network-9mobile">
+          <div class="network-heading"><span class="rate-logo nine">9</span><div><h3>9mobile Data</h3><small>Weekly and monthly bundles</small></div></div>
+          <p>Current 9mobile rates haven’t been provided yet. Message us for available weekly and monthly plans.</p>
+          <a class="button button-secondary" href="https://wa.me/2349025222961" target="_blank" rel="noopener">Ask about 9mobile <span>↗</span></a>
+        </section>
+      </div>
+      <div class="notice-strip"><span>ⓘ</span><p><b>Need a different bundle?</b> <a href="contact.html">Contact our team</a> to ask about current options.</p></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="brand brand-footer" href="index.html"><span class="brand-mark">S</span><span>Sunky <b>Digitals</b></span></a>
+    <p>Everyday digital services, made easy.</p>
+    <nav aria-label="Footer navigation"><a href="contact.html">Contact</a><a href="airtime.html">Airtime</a></nav>
+    <small>© <span data-year></span> Sunky Digitals</small>
+  </footer>
+</body>
+</html>

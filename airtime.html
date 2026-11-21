@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1f3a">
+  <meta name="description" content="Top up MTN, Airtel, Glo, or 9mobile airtime from ₦500 with Sunky Digitals. No service charge.">
+  <title>Airtime Top-Up | Sunky Digitals</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="icon-button menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-open-nav>☰</button>
+      <a class="brand" href="index.html" aria-label="Sunky Digitals home"><span class="brand-mark">S</span><span>Sunky <b>Digitals</b></span></a>
+      <div class="header-actions">
+        <span class="live-status"><i></i> All Services Active</span>
+        <button class="cart-trigger" type="button" aria-label="Open shopping cart" data-open-cart>🛒 <span class="cart-label">Cart</span><span class="cart-count" data-cart-count>0</span></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><span>Airtime</span></div>
+        <span class="eyebrow">QUICK TOP-UP, MADE SIMPLE</span>
+        <h1>Buy airtime in a few taps</h1>
+        <p>Top up MTN, Airtel, Glo, or 9mobile. Airtime starts at ₦500, with no service charge.</p>
+        <div class="page-hero-tags"><span>From ₦500</span><span>All major networks</span><span>No service charge</span></div>
+      </div>
+      <div class="page-hero-visual airtime-visual"><span>₦</span><b>STAY<br>CONNECTED</b><small>AIRTIME TOP-UP</small></div>
+    </section>
+    <section class="section">
+      <div class="airtime-panel">
+        <div class="section-heading compact-heading">
+          <div><span class="eyebrow">AIRTIME TOP-UP</span><h2 id="airtime-heading">Choose your network</h2></div>
+          <p>Enter the recipient number and the amount you want to top up.</p>
+        </div>
+        <form class="order-form form-card" data-order-form="airtime">
+          <div class="form-card-heading"><span class="form-step">01</span><div><h3>Airtime details</h3><p>Airtime orders have no service charge.</p></div></div>
+          <div class="form-grid">
+            <label>Network<select name="network" required><option value="">Choose a network</option><option>MTN</option><option>Airtel</option><option>Glo</option><option>9mobile</option></select></label>
+            <label>Phone number<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 08012345678" pattern="(?:0[789][0-9]{9}|\+?234[789][0-9]{9})" title="Enter a valid Nigerian mobile number, e.g. 08012345678 or +2348012345678" required></label>
+            <label class="full-field">Airtime amount (₦)<input name="amount" type="number" inputmode="numeric" min="500" step="1" placeholder="Minimum ₦500" required></label>
+          </div>
+          <div class="form-footer"><span class="form-hint">Minimum ₦500. No ₦100 service charge.</span><button class="button button-primary" type="submit">Add airtime to cart <span>＋</span></button></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="brand brand-footer" href="index.html"><span class="brand-mark">S</span><span>Sunky <b>Digitals</b></span></a>
+    <p>Everyday digital services, made easy.</p>
+    <nav aria-label="Footer navigation"><a href="contact.html">Contact</a><a href="data.html">Data plans</a><a href="airtime.html" aria-current="page">Airtime</a></nav>
+    <small>© <span data-year></span> Sunky Digitals</small>
+  </footer>
+</body>
+</html>
